@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>learn react</title>
   </head>
   <body>
+    
     <div id="root"></div>
 
     <!-- build complex structure using createElement:
@@ -23,17 +25,8 @@
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
-    <script>
-      const heading = React.createElement("h1", { id: "title" }, "heading 1");
-
-      const heading2 = React.createElement("h2", { id: "title" }, "heading 2");
-
-      const container = React.createElement("div", { id: "container" }, [
-        heading,
-        heading2,
-      ]);
-      const root = ReactDOM.createRoot(document.getElementById("root"));
-      root.render(container);
+    <script src="App.js">
     </script>
   </body>
+  <link rel="stylesheet" href="index.css" />
 </html>

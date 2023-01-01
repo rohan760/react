@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>learn react</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="root"></div>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-<script>
-    const heading = React.createElement('h1',{id:'heading', style:{color: "red"},className:'heading'},'learn react');
-    const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render(heading);
-</script>
-</body>
+
+    <!-- build complex structure using createElement:
+    <div>
+        <h1>heading 1</h1>
+        <h1>heading 2</h1>
+    </div> -->
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script>
+      const heading = React.createElement("h1", { id: "title" }, "heading 1");
+
+      const heading2 = React.createElement("h2", { id: "title" }, "heading 2");
+
+      const container = React.createElement("div", { id: "container" }, [
+        heading,
+        heading2,
+      ]);
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(container);
+    </script>
+  </body>
 </html>

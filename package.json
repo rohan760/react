@@ -1,0 +1,22 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "learn react",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohan760/react.git"
+  },
+  "author": "rohan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohan760/react/issues"
+  },
+  "homepage": "https://github.com/rohan760/react#readme",
+  "devDependencies": {
+    "parcel": "^2.8.2"
+  }
+}
